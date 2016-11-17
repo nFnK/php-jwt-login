@@ -1,0 +1,12 @@
+{
+    "name": "victor/php-jwt-login",
+    "authors": [
+        {
+            "name": "Victor Eliasson",
+            "email": "victor.eliasson@webdeziner.se"
+        }
+    ],
+    "require": {
+        "firebase/php-jwt": "^4.0"
+    }
+}
