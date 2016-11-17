@@ -1,6 +1,9 @@
 <?php
 require_once 'config.php';
 
+if(!empty($_COOKIE['token'])) {
+  header("Location: secure.php");
+}
 ?>
 <!DOCTYPE html>
 <html>

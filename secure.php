@@ -4,13 +4,13 @@ use \Firebase\JWT\JWT;
 $jwt = $_COOKIE['token'];
 
 if(empty($jwt)) {
-  header("Location: index.php");
+  header("Location: logout.php");
 }
 
 $decoded = JWT::decode($jwt, secret, array('HS256'));
 
 if(empty($decoded->username)) {
-  header("Location: index.php");
+  header("Location: logout.php");
 }
 $array = (array) $decoded;
 ?>
